@@ -1,8 +1,12 @@
 {
   "name": "trim-characters",
-  "version": "1.0.0",
-  "description": "Trims text to a certain number of characters.",
+  "version": "1.1.0",
+  "description": "Trims text to a certain number of characters. You can define either to break-word to maintain the number of characters limit or characters limit may decrease to avoid breaking words.",
   "main": "index.js",
+  "files": [
+    "LICENSE",
+    "index.js"
+  ],
   "scripts": {
     "test": "node test/all.js"
   },

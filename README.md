@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![AppVeyor Build Status][appveyor-image]][appveyor-url] [![Dependency Status][dependency-image]][dependency-url]
 
-Trims text to a certain number of characters. You can define either to break word to maintain the number of characters limit or characters limit may decreases to avoid breaking words.
+Trims text to a certain number of characters. You can define either to break-word to maintain the number of characters limit or characters limit may decrease to avoid breaking words.
 
 ## Install
 
@@ -63,11 +63,11 @@ console.log('Trim Characters without breaking words: ', trimmedChar2);
 ## Parameters
 
 | Attributes | Type | Required | Default | Description |
-| ----------- | ----- | ----------- | -------- |-------------- |
+|-------------|:-----:|:-----------:|:--------:|--------------|
 | text | String | Yes | | Text to trim. |
 | charLength | Integer | No | `155` | Number of characters. |
-| breakWord | Boolean | No | `false` | Either to break words or not. If it is set to `true` then `charLength` may decreases to **AVOID** breaking words.  |
-| more | String | No | &hellip; | What to append if `text` needs to be trimmed. |
+| breakWord | Boolean | No | `false` | Either to break words or not.<br><br>If it is set to `true` then `charLength`<wbr> may decrease to **AVOID** breaking words.  |
+| more | String | No | `&hellip;` | What to append if the `text` needs to be<wbr> trimmed. |
 
 ## Return
 
