@@ -1,0 +1,30 @@
+{
+  "name": "trim-characters",
+  "version": "1.0.0",
+  "description": "Trims text to a certain number of characters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samiahmedsiddiqui/trim-characters.git"
+  },
+  "keywords": [
+    "react",
+    "trim",
+    "characters",
+    "break-word",
+    "without-break-word"
+  ],
+  "author": "Sami Ahmed Siddiqui <sami.siddiqui@yasglobal.com> (https://www.yasglobal.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samiahmedsiddiqui/trim-characters/issues"
+  },
+  "homepage": "https://github.com/samiahmedsiddiqui/trim-characters#readme",
+  "dependencies": {
+    "trim-php": "^1.0.0"
+  },
+  "runkitExampleFilename": "test/runkit.js"
+}
