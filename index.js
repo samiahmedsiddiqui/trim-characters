@@ -5,11 +5,15 @@ var phpTrim = require('trim-php');
 function trimCharacters(text, charLength, breakWord, more) {
   var sep = ' ';
 
-  if (!charLength) {
+  if (typeof charLength !== 'number') {
     charLength = 155;
   }
 
-  if (!more) {
+  if (typeof breakWord !== 'boolean') {
+    breakWord = true;
+  }
+
+  if (typeof more !== 'string') {
     more = '&hellip;';
   }
 
@@ -21,9 +25,9 @@ function trimCharacters(text, charLength, breakWord, more) {
 
   if (text.length > charLength) {
     if (breakWord) {
-      text = text.substr(0, text.lastIndexOf(sep, charLength));
-    } else {
       text = text.substring(0, charLength);
+    } else {
+      text = text.substr(0, text.lastIndexOf(sep, charLength));
     }
 
     text = text + more;

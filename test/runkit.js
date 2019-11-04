@@ -7,9 +7,9 @@ var trimmedChar2 = trimCharacters(text, 70, true, '...');
 
 console.log('Original Text is:');
 console.log(text);
-console.log('Trim Characters with breaking words:');
-console.log(trimmedChar1);
 console.log('Trim Characters without breaking words:');
+console.log(trimmedChar1);
+console.log('Trim Characters with breaking words:');
 console.log(trimmedChar2);
 
 process.exit();
