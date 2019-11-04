@@ -7,12 +7,12 @@ Trims text to a certain number of characters. You can define either to break-wor
 ## Install
 
 Via `npm`
-```
+```javascript
 npm install trim-characters
 ```
 
 Via Yarn
-```
+```javascript
 yarn add trim-characters
 ```
 
@@ -62,12 +62,12 @@ console.log('Trim Characters without breaking words: ', trimmedChar2);
 
 ## Parameters
 
-| Attributes |   Type  | Required |   Default  | Description                                                                                                     |
-|------------|:-------:|:--------:|:----------:|-----------------------------------------------------------------------------------------------------------------|
-| text       |  String |    Yes   |            | Text to trim.                                                                                                   |
-| charLength | Integer |    No    |    `155`   | Number of characters.                                                                                           |
+| Attributes |   Type  | Required |   Default  | Description                                                                                                              |
+|------------|:-------:|:--------:|:----------:|--------------------------------------------------------------------------------------------------------------------------|
+| text       |  String |    Yes   |            | Text to trim.                                                                                                            |
+| charLength | Integer |    No    |    `155`   | Number of characters.                                                                                                    |
 | breakWord  | Boolean |    No    |   `true`   | Either to break words or not.<br><br>If it is set to `false` then `charLength` may decrease to **AVOID** breaking words. |
-| more       |  String |    No    | `&hellip;` | What to append if the `text` needs to be trimmed.                                                               |
+| more       |  String |    No    | `&hellip;` | What to append if the `text` needs to be trimmed.                                                                        |
 
 ## Return
 
