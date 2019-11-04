@@ -1,11 +1,11 @@
 {
   "name": "trim-characters",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Trims text to a certain number of characters. You can define either to break-word to maintain the number of characters limit or characters limit may decrease to avoid breaking words.",
   "main": "index.js",
   "files": [
-    "LICENSE",
-    "index.js"
+    "index.js",
+    "test/runkit.js"
   ],
   "scripts": {
     "test": "node test/all.js"
@@ -15,9 +15,11 @@
     "url": "https://github.com/samiahmedsiddiqui/trim-characters.git"
   },
   "keywords": [
-    "react",
     "trim",
     "characters",
+    "trim-characters",
+    "react-trim-characters",
+    "trim-characters-nodejs",
     "break-word",
     "without-break-word"
   ],
@@ -28,7 +30,7 @@
   },
   "homepage": "https://github.com/samiahmedsiddiqui/trim-characters#readme",
   "dependencies": {
-    "trim-php": "^1.0.0"
+    "trim-php": "^1.1.0"
   },
-  "runkitExampleFilename": "test/runkit.js"
+  "runkitExampleFilename": "test/runkitExample.js"
 }
