@@ -20,21 +20,21 @@ yarn add trim-characters
 
 Import Package in `Node.js`.
 
-```
+```javascript
 var trimCharacters = require('trim-characters');
 ```
 
 Import Package in `React`.
 
-```
+```javascript
 import trimCharacters from 'trim-characters';
 ```
 
 ## Example
 
-### Trims text to a certain number of characters in `Node.js`. 
+### Trims text to a certain number of characters in `Node.js`
 
-```
+```javascript
 var trimCharacters = require('trim-characters');
 
 var text = '<h1>What is Geostatistics?</h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt quam ut ligula ullamcorper interdum. Nulla malesuada purus tristique justo tristique, id posuere purus tristique. Pellentesque non magna ut libero elementum interdum vel vitae ante. Sed porta auctor urna eget venenatis. Mauris nec convallis metus. Sed at dui elit. Donec rhoncus justo neque, finibus commodo dui posuere ut. Maecenas in mi enim. Quisque maximus enim nunc.</p> <p>Donec eu ultricies ipsum. Fusce eget pellentesque urna. Vestibulum lacinia laoreet mi nec posuere. Duis vel elit elementum, scelerisque eros a, sodales eros. Praesent hendrerit neque velit, nec pretium ipsum finibus facilisis. Proin ultricies sem in sapien consectetur dictum.</p>';
@@ -46,9 +46,9 @@ console.log('Trim Characters with breaking words: ', trimmedChar1);
 console.log('Trim Characters without breaking words: ', trimmedChar2);
 ```
 
-### Trims text to a certain number of characters in `React`. 
+### Trims text to a certain number of characters in `React`
 
-```
+```javascript
 import trimCharacters from 'trim-characters';
 
 var text = '<h1>What is Geostatistics?</h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt quam ut ligula ullamcorper interdum. Nulla malesuada purus tristique justo tristique, id posuere purus tristique. Pellentesque non magna ut libero elementum interdum vel vitae ante. Sed porta auctor urna eget venenatis. Mauris nec convallis metus. Sed at dui elit. Donec rhoncus justo neque, finibus commodo dui posuere ut. Maecenas in mi enim. Quisque maximus enim nunc.</p> <p>Donec eu ultricies ipsum. Fusce eget pellentesque urna. Vestibulum lacinia laoreet mi nec posuere. Duis vel elit elementum, scelerisque eros a, sodales eros. Praesent hendrerit neque velit, nec pretium ipsum finibus facilisis. Proin ultricies sem in sapien consectetur dictum.</p>';
@@ -62,12 +62,12 @@ console.log('Trim Characters without breaking words: ', trimmedChar2);
 
 ## Parameters
 
-| Attributes | Type | Required | Default | Description |
-|-------------|:-----:|:-----------:|:--------:|--------------|
-| text | String | Yes | | Text to trim. |
-| charLength | Integer | No | `155` | Number of characters. |
-| breakWord | Boolean | No | `false` | Either to break words or not.<br><br>If it is set to `true` then `charLength`<wbr> may decrease to **AVOID** breaking words.  |
-| more | String | No | `&hellip;` | What to append if the `text` needs to be<wbr> trimmed. |
+| Attributes |   Type  | Required |   Default  | Description                                                                                                     |
+|------------|:-------:|:--------:|:----------:|-----------------------------------------------------------------------------------------------------------------|
+| text       |  String |    Yes   |            | Text to trim.                                                                                                   |
+| charLength | Integer |    No    |    `155`   | Number of characters.                                                                                           |
+| breakWord  | Boolean |    No    |   `true`   | Either to break words or not.<br><br>If it is set to `false` then `charLength` may decrease to **AVOID** breaking words. |
+| more       |  String |    No    | `&hellip;` | What to append if the `text` needs to be trimmed.                                                               |
 
 ## Return
 
