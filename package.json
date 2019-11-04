@@ -1,11 +1,11 @@
 {
   "name": "trim-characters",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Trims text to a certain number of characters. You can define either to break-word to maintain the number of characters limit or characters limit may decrease to avoid breaking words.",
   "main": "index.js",
   "files": [
     "index.js",
-    "test/runkit.js"
+    "test/runkitExample.js"
   ],
   "scripts": {
     "test": "node test/all.js"
