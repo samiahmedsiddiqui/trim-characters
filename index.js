@@ -17,9 +17,10 @@ function trimCharacters(text, charLength, breakWord, more) {
     more = '&hellip;';
   }
 
-  // StripTags
-  text = text.replace(/<(script|style)[^>]*?>.*?<\/\\1>/si, '');
-  text = text.replace(/<[^>]*>/g, '');
+  // strip script and style tags
+  text = text.replace(/<(script|style)([\S\s]*?)>([\S\s]*?)<\/(script|style)>/ig, '');
+  // strip all the other HTML tags
+  text = text.replace(/(<([^>]+)>)/ig, '');
   text = phpTrim.trimPhp(text);
   text = text.replace(/[\n\r\t]+/, ' ');
 
