@@ -7,12 +7,12 @@ Trims text to a certain number of characters. You can define either to break-wor
 ## Install
 
 Via `npm`
-```javascript
+```bash
 npm install trim-characters
 ```
 
 Via Yarn
-```javascript
+```bash
 yarn add trim-characters
 ```
 
