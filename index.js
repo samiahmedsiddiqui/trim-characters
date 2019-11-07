@@ -22,7 +22,7 @@ function trimCharacters(text, charLength, breakWord, more) {
   // strip all the other HTML tags
   text = text.replace(/(<([^>]+)>)/ig, '');
   text = phpTrim.trimPhp(text);
-  text = text.replace(/[\n\r\t]+/g, ' ');
+  text = text.replace(/[\n\r\t ]+/g, ' ');
 
   if (text.length > charLength) {
     if (breakWord) {
