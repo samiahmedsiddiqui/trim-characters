@@ -5,6 +5,10 @@ var phpTrim = require('trim-php');
 function trimCharacters(text, charLength, breakWord, more) {
   var sep = ' ';
 
+  if (typeof text === 'undefined') {
+    text = '';
+  }
+
   if (typeof charLength !== 'number') {
     charLength = 155;
   }
