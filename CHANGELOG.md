@@ -1,5 +1,12 @@
 # trim-characters changelog
 
+## 1.4.0 - Dec 10, 2019
+
+### Fix
+
+- Replace multiple spaces with single space
+- Assign empty string if `text` is not defined
+
 ## 1.3.0 - Nov 06, 2019
 
 ### Fix
