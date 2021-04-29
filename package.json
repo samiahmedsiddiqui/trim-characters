@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/samiahmedsiddiqui/trim-characters#readme",
   "dependencies": {
-    "trim-php": "^1.1.0"
+    "trim-php": "^2.0.0"
   },
   "runkitExampleFilename": "test/runkitExample.js"
 }
