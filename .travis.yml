@@ -1,11 +1,20 @@
+branches:
+  only:
+    - master
+dist: xenial
 language: node_js
 node_js:
-  - 8
-  - 9
   - 10
   - 11
   - 12
+  - 13
+  - 14
   - node
 os:
   - linux
   - osx
+install:
+  npm install
+script:
+  - npm run lint
+  - npm run test

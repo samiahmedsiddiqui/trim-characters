@@ -1,5 +1,11 @@
 # trim-characters changelog
 
+## 2.0.0 - Apr 30, 2021
+
+### Enhancement
+
+- Migrated from `JS` to `TS`
+
 ## 1.4.0 - Dec 10, 2019
 
 ### Fix

@@ -18,13 +18,13 @@ yarn add trim-characters
 
 ## Usage
 
-Import Package in `Node.js`.
+## With CommonJS
 
 ```javascript
-var trimCharacters = require('trim-characters');
+const trimCharacters = require('trim-characters');
 ```
 
-Import Package in `React`.
+## With React
 
 ```javascript
 import trimCharacters from 'trim-characters';
@@ -35,15 +35,15 @@ import trimCharacters from 'trim-characters';
 ### Trims text to a certain number of characters in `Node.js`
 
 ```javascript
-var trimCharacters = require('trim-characters');
+const trimCharacters = require('trim-characters');
 
-var text = '<h1>What is Geostatistics?</h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt quam ut ligula ullamcorper interdum. Nulla malesuada purus tristique justo tristique, id posuere purus tristique. Pellentesque non magna ut libero elementum interdum vel vitae ante. Sed porta auctor urna eget venenatis. Mauris nec convallis metus. Sed at dui elit. Donec rhoncus justo neque, finibus commodo dui posuere ut. Maecenas in mi enim. Quisque maximus enim nunc.</p> <p>Donec eu ultricies ipsum. Fusce eget pellentesque urna. Vestibulum lacinia laoreet mi nec posuere. Duis vel elit elementum, scelerisque eros a, sodales eros. Praesent hendrerit neque velit, nec pretium ipsum finibus facilisis. Proin ultricies sem in sapien consectetur dictum.</p>';
+const text = '<h1>What is Geostatistics?</h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt quam ut ligula ullamcorper interdum. Nulla malesuada purus tristique justo tristique, id posuere purus tristique. Pellentesque non magna ut libero elementum interdum vel vitae ante. Sed porta auctor urna eget venenatis. Mauris nec convallis metus. Sed at dui elit. Donec rhoncus justo neque, finibus commodo dui posuere ut. Maecenas in mi enim. Quisque maximus enim nunc.</p> <p>Donec eu ultricies ipsum. Fusce eget pellentesque urna. Vestibulum lacinia laoreet mi nec posuere. Duis vel elit elementum, scelerisque eros a, sodales eros. Praesent hendrerit neque velit, nec pretium ipsum finibus facilisis. Proin ultricies sem in sapien consectetur dictum.</p>';
 
-var trimmedChar1 = trimCharacters(text, 70, false, '...');
-var trimmedChar2 = trimCharacters(text, 70, true, '...');
+const trimmedChar1 = trimCharacters(text, 70, false, '...');
+const trimmedChar2 = trimCharacters(text, 70, true, '...');
 
-console.log('Trim Characters with breaking words: ', trimmedChar1);
-console.log('Trim Characters without breaking words: ', trimmedChar2);
+console.log('Trim Characters without breaking words: ', trimmedChar1);
+console.log('Trim Characters with breaking words: ', trimmedChar2);
 ```
 
 ### Trims text to a certain number of characters in `React`
@@ -51,13 +51,13 @@ console.log('Trim Characters without breaking words: ', trimmedChar2);
 ```javascript
 import trimCharacters from 'trim-characters';
 
-var text = '<h1>What is Geostatistics?</h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt quam ut ligula ullamcorper interdum. Nulla malesuada purus tristique justo tristique, id posuere purus tristique. Pellentesque non magna ut libero elementum interdum vel vitae ante. Sed porta auctor urna eget venenatis. Mauris nec convallis metus. Sed at dui elit. Donec rhoncus justo neque, finibus commodo dui posuere ut. Maecenas in mi enim. Quisque maximus enim nunc.</p> <p>Donec eu ultricies ipsum. Fusce eget pellentesque urna. Vestibulum lacinia laoreet mi nec posuere. Duis vel elit elementum, scelerisque eros a, sodales eros. Praesent hendrerit neque velit, nec pretium ipsum finibus facilisis. Proin ultricies sem in sapien consectetur dictum.</p>';
+const text = '<h1>What is Geostatistics?</h1> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt quam ut ligula ullamcorper interdum. Nulla malesuada purus tristique justo tristique, id posuere purus tristique. Pellentesque non magna ut libero elementum interdum vel vitae ante. Sed porta auctor urna eget venenatis. Mauris nec convallis metus. Sed at dui elit. Donec rhoncus justo neque, finibus commodo dui posuere ut. Maecenas in mi enim. Quisque maximus enim nunc.</p> <p>Donec eu ultricies ipsum. Fusce eget pellentesque urna. Vestibulum lacinia laoreet mi nec posuere. Duis vel elit elementum, scelerisque eros a, sodales eros. Praesent hendrerit neque velit, nec pretium ipsum finibus facilisis. Proin ultricies sem in sapien consectetur dictum.</p>';
 
-var trimmedChar1 = trimCharacters(text, 70, false, '...');
-var trimmedChar2 = trimCharacters(text, 70, true, '...');
+const trimmedChar1 = trimCharacters(text, 70, false, '...');
+const trimmedChar2 = trimCharacters(text, 70, true, '...');
 
-console.log('Trim Characters with breaking words: ', trimmedChar1);
-console.log('Trim Characters without breaking words: ', trimmedChar2);
+console.log('Trim Characters without breaking words: ', trimmedChar1);
+console.log('Trim Characters with breaking words: ', trimmedChar2);
 ```
 
 ## Parameters
@@ -75,7 +75,7 @@ Trimmed text.
 
 ## Tested
 
-This package is tested with the `Node.js` and `React` Application. 
+This package is tested with the `Node.js` and `React` Application.
 
 [npm-image]: https://img.shields.io/npm/v/trim-characters.svg
 [npm-url]: https://www.npmjs.com/package/trim-characters
