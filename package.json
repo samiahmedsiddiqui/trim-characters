@@ -1,6 +1,6 @@
 {
   "name": "trim-characters",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Trims text to a certain number of characters. You can define either to break-word to maintain the number of characters limit or characters limit may decrease to avoid breaking words.",
   "main": "index.js",
   "types": "types/index.d.ts",
